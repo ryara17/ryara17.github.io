@@ -1,0 +1,150 @@
+/*THIS STYLES SHEET IS ORGANIZED IN ORDER OF CONTENT OCCURENCE*/
+/*****************************/
+/*PAGE STYLING VARIABLES*/
+/*****************************/
+/*https://www.w3schools.com/css/css3_variables.asp*/
+:root {
+  /*ENTIRE PAGE VARIABLES*/
+  /*ENTIRE PAGE FONT*/
+  --font: Arial;
+  /*ENTIRE PAGE'S ITEMS MARGINS*/
+  --margTop: 2%;
+  --margBott: 2%;
+  /*ENTIRE PAGE'S TEXT ITEMS HOVER TRANSITION SPEED*/
+  --transitionSpeed: 1s;
+  /*ENTIRE PAGE'S ITEMS HOVER COLOR*/
+  --hoverColorR: red;
+  --hoverColorW: white;
+  --hoverColorDR: darkred;
+  --hoverColorBl: black;
+  /*ENTIRE PAGE'S IMAGE ITEMS HOVER FILTER*/
+  --hoverFiltO: opacity(50%);
+  --hoverFiltI: invert(100%);
+
+  /*BODY VARIABLES*/
+  --fadeInSpeed: 5s;
+
+  /*ARTIST NAME VARIABLES*/
+  /*ARTIST NAME LETTER SPACING*/
+  --nameLettSpace: 2vw;
+  /*ARTIST NAME FONT WEIGHT*/
+  --nameFontWeight: 900;
+  /*ARTIST NAME FONT COLOR*/
+  --nameColor: black;
+
+  /*HOME PAGE TAB VARIABLES*/
+  /*HOME PAGE TABS MARGINS*/
+  --tabMargRight: 10%;
+  --tabMargLeft: 10%;
+  /*HOME PAGE TABS LETTER SPACING*/
+  --tabLettSpace: 1vw;
+
+  /*HOME PAGE IMAGE VARIABLES*/
+  /*HOME PAGE IMAGE WIDTH*/
+  --homeImageWidth: 20%;
+
+  /*SOCIAL MEDIA LINKS VARIABLES*/
+  /*SOCIAL MEDIA ICON IMAGE WIDTH*/
+  --iconImageWidth: 3%;
+  /*SOCIAL MEDIA ICON MARGINS*/
+  --iconMargRight: 1.5%;
+  --iconMargLeft: 1.5%;
+}
+/*****************************/
+/*END PAGE STYLING VARIABLES*/
+/*****************************/
+
+/*****************************/
+/*BODY STYLING*/
+/*****************************/
+html {
+  animation: fadeIn var(--fadeInSpeed); -webkit-animation: fadeIn var(--fadeInSpeed); -moz-animation: fadeIn var(--fadeInSpeed); -o-animation: fadeIn var(--fadeInSpeed); -ms-animation: fadeIn var(--fadeInSpeed);
+}
+/*PAGE FADE IN KEY FRAMES*/
+@keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}} @-moz-keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}} @-webkit-keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}} @-o-keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}} @-ms-keyframes fadeIn {0% {opacity:0;} 100% {opacity:1;}}
+body {
+  /*PAGE FADE IN*/
+  background: lightblue;
+}
+/*****************************/
+/*END BODY STYLING*/
+/*****************************/
+
+/*****************************/
+/*ARTIST NAME STYLING*/
+/*****************************/
+h1 {
+  background: black;
+  letter-spacing: var(--nameLettSpace);
+  font-family: "Times New Roman", Times, serif;
+  color: var(--nameColor);
+  font-weight: var(--nameFontWeight);
+  transition: var(--transitionSpeed);
+  /*https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+h1:hover {
+  color: var(--hoverColorW);
+}
+/*****************************/
+/*END ARTIST NAME STYLING*/
+/*****************************/
+
+/*****************************/
+/*HOME PAGE TABS STYLING*/
+/*****************************/
+/*HOME PAGE TABS GROUP*/
+h5 {
+  /*https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+/*HOME PAGE TABS INDIVIDUAL*/
+h5 {
+  transition: var(--transitionSpeed);
+}
+/*HOME PAGE TABS INDIVIDUAL HOVER PROPERTIES*/
+h5:hover {
+  color: var(--hoverColorW);
+}
+/*HOME PAGE TABS TEXT*/
+h5 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  letter-spacing: var(--tabLettSpace);
+}
+/*****************************/
+/*END HOME PAGE TABS STYLING*/
+/*****************************/
+
+i {
+  color: black;
+}
+label {
+  color:black;
+}
+/*****************************/
+/*HOME PAGE IMAGE STYLING*/
+/*****************************/
+/*****************************/
+/*END HOME PAGE IMAGE STYLING*/
+/*****************************/
+
+/*****************************/
+/*SOCIAL MEDIA LINKS STYLING*/
+/*****************************/
+/*SOCIAL MEDIA LINKS GROUP*/
+i {
+  /*https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+/*SOCIAL MEDIA LINKS INDIVIDUAL*/
+i {
+  transition: var(--transitionSpeed);
+}
+/*SOCIAL MEDIA LINKS INDIVIDUAL*/
+i:hover {
+  filter: var(--hoverFiltI);
+}
+/*****************************/
+/*END SOCIAL MEDIA LINKS STYLING*/
+/*****************************/
