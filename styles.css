@@ -30,7 +30,7 @@
   /*ARTIST NAME FONT WEIGHT*/
   --nameFontWeight: 900;
   /*ARTIST NAME FONT COLOR*/
-  --nameColor: black;
+  --nameColor: white;
 
   /*HOME PAGE TAB VARIABLES*/
   /*HOME PAGE TABS MARGINS*/
@@ -84,7 +84,8 @@ h1 {
   -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 h1:hover {
-  color: var(--hoverColorW);
+  color: var(--hoverColorBl);
+  background: white;
 }
 /*****************************/
 /*END ARTIST NAME STYLING*/
@@ -111,6 +112,33 @@ h5 {
   font-family: "Times New Roman", Times, serif;
   color: black;
   letter-spacing: var(--tabLettSpace);
+}
+
+.img-fluid {
+  pointer-events: none;
+  user-select: none;
+}
+
+label {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--nameColor);  
+  transition: var(--transitionSpeed);
+  /*https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+/*HOME PAGE TABS INDIVIDUAL*/
+label {
+  transition: var(--transitionSpeed);
+}
+/*HOME PAGE TABS INDIVIDUAL HOVER PROPERTIES*/
+label:hover {
+  color: var(--hoverColorW);
+}
+button {
+  font-family: "Times New Roman", Times, serif;
+  transition: var(--transitionSpeed);
+  /*https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+  -webkit-touch-callout: none; /* iOS Safari */ -webkit-user-select: none; /* Safari */ -khtml-user-select: none; /* Konqueror HTML */ -moz-user-select: none; /* Old versions of Firefox */ -ms-user-select: none; /* Internet Explorer/Edge */ user-select: none; /*Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 /*****************************/
 /*END HOME PAGE TABS STYLING*/
