@@ -61,74 +61,73 @@
 				footer.setAttribute("hidden", "hidden");
 			}
 		}
-	</script>
-
+		</script>
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 
 <!-- Header -->
-		<header>
-			<!-- Heading -->
-			<div class="container-fluid mt-4">
-				<div class="row">
-					<div class="col p-0">
-						<h1 class="text-center fs-6" id="artistName">ryara17@proton.me</h1>
-					</div>
-				</div>
+<header>
+	<!-- Heading -->
+	<div class="container-fluid mt-4">
+		<div class="row">
+			<div class="col p-0">
+				<h1 class="text-center fs-6" id="artistName">ryara17@proton.me</h1>
 			</div>
-		</header>
-	<body id="body" class="d-flex flex-column min-vh-100">
+		</div>
+	</div>
+</header>
+<body id="body" class="d-flex flex-column min-vh-100">
 
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
 
-		
-
-		<!-- Shop items -->
-		<div class="container-fluid mt-auto mb-auto">
-			<div class="row justify-content-center">
-				<div class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0">
-					<div>
-
-						<script type="text/javascript">
-							function changePic(){
-								var checkbox = document.getElementById('checkbox');
-								if (checkbox.checked == true){
-									document.picture.src="Cristo_crucificado_white.png";
-								} else{
-									document.picture.src="Cristo_crucificado_black.png";
-								}
+	<!-- Shop items -->
+	<div class="container-fluid mt-auto mb-auto">
+		<div class="row justify-content-center">
+			<div class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0" align="center">
+				<div>					
+					<script type="text/javascript">
+						function changePic(){
+							var checkbox = document.getElementById('checkbox');
+							if (checkbox.checked == true){
+								document.picture.src="Cristo_crucificado_white.png";
+							} else{
+								document.picture.src="Cristo_crucificado_black.png";
 							}
-						</script>
-						<label  for="checkbox" id="checkboxLabel">Black/White:</label>
-						<input type="checkbox" class="form-check-input" name="checkbox" id="checkbox" onClick="changePic();">
+						}
+					</script>
+					<label  for="checkbox" id="checkboxLabel">Black/White:</label>
+					<input type="checkbox" class="form-check-input" name="checkbox" id="checkbox" onClick="changePic();">
 
-						<br></br>
+					<br></br>
 
-						<label  for="colorpicker" id="colorpickerLabel">Background Color:</label>
-						<input id = "colorInput" type = "color" onchange="selectColor()">
-						<script>
-							function selectColor() {
-								var color = document.getElementById('colorInput');
+					<label  for="colorpicker" id="colorpickerLabel">Background Color:</label>
+					<input id = "colorInput" type = "color" onchange="selectColor()">
+					<script>
+						function selectColor() {
+							var color = document.getElementById('colorInput');
 						         // changing the background color
-								document.body.style.backgroundColor = color.value;
-							}
-						</script>
+							document.body.style.backgroundColor = color.value;
+						}
+					</script>
 
-						<br></br>
+					<br></br>
 
-						<button id="hideButton" class="btn btn-dark">
-							Enter Screenshot Mode<br>
-							[tap on/around Christ]<br>
-							(& vice versa)
-						</button>
-					</div>
-				</div>
-				<div onclick="toggleHide();" class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0">
-					<img class="img-fluid" name = "picture" src="Cristo_crucificado_black.png"> 				
-				</div>
-				<div class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0">
+					<button id="hideButton" class="btn btn-dark">
+						Enter Screenshot Mode<br>
+						[tap on/around Christ]<br>
+						(& vice versa)
+					</button>
+					
+					<br></br>
 				</div>
 			</div>
+			<div onclick="toggleHide();" class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0">
+				<img class="img-fluid" name = "picture" src="Cristo_crucificado_black.png"> 				
+			</div>
+			<div class="d-flex align-items-center justify-content-center col-7 col-sm-6 col-md-5 col-lg-3 col-xl-2 col-xxl-1 p-0">
+			</div>
+		</div>
 	</body>
 	<!-- Footer Social Media Links -->
 	<footer class="container-fluid text-center mb-4" id="footer">
@@ -140,5 +139,5 @@
 		</div>
 		<h5>&copy;2023</h5>
 	</footer>
-		
-</html>
+
+	</html>
